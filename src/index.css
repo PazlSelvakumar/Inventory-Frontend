@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+    /* max-width: 600px; */
+    
+}
+
+.btn{
+    
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.green{
+    background-color: #4CAF50;
+}
+.green:hover{
+    background-color: #45a049;
+}
+.red{
+    background-color: #f44336;
+}
+
+.red:hover{
+    background-color: #f24336;
+}
+
+.table-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px;
+    }
+
+    .photo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 55px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .descrp {
+    max-width: 200px;  /* Set the width */
+    white-space: nowrap;  /* Prevent text from wrapping */
+    overflow: hidden;  /* Hide overflow */
+    text-overflow: ellipsis;  /* Show "..." for overflow text */
+    cursor: pointer;  /* Indicate interactivity */
+}
+
+.descrp:hover {
+    white-space: normal;  /* Allow text to wrap */
+    background: #f9f9f9;  /* Light background for visibility */
+    position: absolute;
+    width: auto;  /* Expand width */
+    max-width: 300px;  /* Optional: Limit width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;  /* Ensure it appears above other content */
+}
